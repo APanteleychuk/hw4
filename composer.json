@@ -1,0 +1,21 @@
+{
+    "name": "root/hw4.loc",
+    "require": {
+        "league/route": "^2.0"
+            },
+    "authors": [
+        {
+            "name": "Alexey.Panteleychuk",
+            "email": "Alexey.Panteleychuk@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "src/Controllers",
+            "Repositories\\": "src/Repositories",
+            "Views\\": "src/Views"
+        }
+    },
+    "minimum-stability": "stable"
+}
