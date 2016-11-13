@@ -1,7 +1,9 @@
 {
     "name": "root/hw4.loc",
     "require": {
-        "league/route": "^2.0"
+        "php": ">=5.5.0",
+        "gears/router": "^0.6.6",
+        "twig/twig": "^1.27"
             },
     "authors": [
         {
@@ -12,9 +14,7 @@
 
     "autoload": {
         "psr-4": {
-            "Controllers\\": "src/Controllers",
-            "Repositories\\": "src/Repositories",
-            "Views\\": "src/Views"
+            "Vendor\\Univer\\": "src/"
         }
     },
     "minimum-stability": "stable"
