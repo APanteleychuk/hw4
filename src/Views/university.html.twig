@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block title %}  University {% endblock %}
+{% block h1 %} {{ univer.name }} {% endblock %}
+{% block h2 %}
+    <a href="create-DB" xmlns="http://www.w3.org/1999/html">Создать базу данных</a>
+
+    <a href="fill-DB">Заполнить базу</a>
+{% endblock %}
+{% block body %}
+    {% block content %}
+        <h3>Университет</h3>
+        <div>
+                <span>Город: {{ univer.city }}</span></br>
+                <span>Сайт: {{ univer.website }}</span></br>
+        </div>
+    {% endblock %}
+    {% block sidebar %}
+        <ul>
+            <li> <a href="departments">Кафедры</a></li>
+            <li> <a href="all-students">Студенты</a></li>
+            <li> <a href="teachers">Преподаватели</a></li>
+            <li> <a href="hometasks">Домашки</a></li>
+        </ul>
+
+    {% endblock %}
+
+{% endblock %}
